@@ -10,9 +10,7 @@
     "dev": "npm run watch"
   },
   "dependencies": {
-    "chrome-sidebar": "file:..",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "chrome-sidebar": "file:.."
   },
   "devDependencies": {
     "babel-core": "6.24.0",

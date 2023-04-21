@@ -1,5 +1,3 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
 import { Frame } from 'chrome-sidebar'
 import { url } from './settings'
 
@@ -12,10 +10,8 @@ if (Frame.isReady()) {
 function boot() {
   const root = document.createElement('div')
   document.body.appendChild(root)
-
-  const App = (
-    <Frame url={url} />
-  )
-
-  ReactDOM.render(App, root)
+  const h = document.createElement('h1');
+  h.textContent = url;
+  root.appendChild(h);
+  console.debug('testing', url);
 }
